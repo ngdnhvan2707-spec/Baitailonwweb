@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FitTrack - Fitness Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+
+            FIT<span>TRACK</span>
+
+        </div>
+
+        <nav class="navbar">
+
+            <a href="#">Trang Chủ</a>
+
+            <a href="#programs">Programs</a>
+
+            <a href="#tracker">Workout</a>
+
+            <a href="#pricing">Bảng Giá</a>
+
+            <a href="#contact">Liên Hệ</a>
+
+        </nav>
+
+        <div class="header-btns">
+
+            <a href="history.html">
+
+                Lịch Sử
+
+            </a>
+
+            <a href="admin.html">
+
+                Quản Lý
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h3>
+                BEST FITNESS TRACKER
+            </h3>
+
+            <h1>
+
+                Build Your
+
+                <span>
+
+                    Dream Body
+
+                </span>
+
+            </h1>
+
+            <p>
+
+                Ghi lại mỗi buổi tập, theo dõi calo đốt cháy và tiến độ luyện tập hàng ngày.
+                 Đồng hành cùng bạn trên hành trình sức khỏe.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="start-btn">
+
+                    Start Training
+
+                </button>
+
+                <button class="watch-btn">
+
+                    Explore More
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section class="stats">
+
+        <div class="stat-box">
+
+            <h1 id="totalWorkout">
+
+                0
+
+            </h1>
+
+            <p>
+
+                Tổng Buổi Tập
+
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h1 id="totalCalories">
+
+                0
+
+            </h1>
+
+            <p>
+
+                Calories Burned
+
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h1 id="totalMinutes">
+
+                0
+
+            </h1>
+
+            <p>
+
+                Total Minutes
+
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h1>
+
+                24/7
+
+            </h1>
+
+            <p>
+
+                Fitness Support
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PROGRAMS -->
+
+    <section
+        class="programs"
+        id="programs"
+    >
+
+        <div class="section-title">
+
+            <h1>
+
+                Our Programs
+
+            </h1>
+
+            <p>
+
+                Chương trình tập luyện hiện đại
+                dành cho mọi mục tiêu fitness.
+
+            </p>
+
+        </div>
+
+        <div class="program-grid">
+
+            <div class="program-card">
+
+                <i class="fa-solid fa-dumbbell"></i>
+
+                <h2>
+
+                    Strength Training
+
+                </h2>
+
+                <p>
+
+                    Tăng cơ, phát triển sức mạnh
+                    và cải thiện body hiệu quả.
+
+                </p>
+
+            </div>
+
+            <div class="program-card">
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                <h2>
+
+                    Cardio Workout
+
+                </h2>
+
+                <p>
+
+                    Đốt mỡ, tăng sức bền và
+                    cải thiện tim mạch.
+
+                </p>
+
+            </div>
+
+            <div class="program-card">
+
+                <i class="fa-solid fa-fire"></i>
+
+                <h2>
+
+                    Fat Burn
+
+                </h2>
+
+                <p>
+
+                    Chế độ tập chuyên sâu giúp
+                    giảm cân nhanh chóng.
+
+                </p>
+
+            </div>
+
+            <div class="program-card">
+
+                <i class="fa-solid fa-person-running"></i>
+
+                <h2>
+
+                    Fitness Training
+
+                </h2>
+
+                <p>
+
+                    Workout toàn diện cho cơ thể
+                    khỏe mạnh và săn chắc.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TRACKER -->
+
+    <section
+        class="tracker"
+        id="tracker"
+    >
+
+        <div class="tracker-left">
+
+            <h1>
+
+                Workout Tracker
+
+            </h1>
+
+            <p>
+
+                Thêm workout mới để theo dõi
+                quá trình tập luyện mỗi ngày.
+
+            </p>
+
+            <div class="tracker-form">
+
+                <input
+                    type="text"
+                    id="workoutName"
+                    placeholder="Tên bài tập"
+                >
+
+                <input
+                    type="number"
+                    id="calories"
+                    placeholder="Calories Burned"
+                >
+
+                <input
+                    type="number"
+                    id="minutes"
+                    placeholder="Workout Minutes"
+                >
+
+                <input
+                    type="date"
+                    id="date"
+                >
+
+                <input
+                    type="file"
+                    id="imageUpload"
+                >
+
+                <button onclick="addWorkout()">
+
+                    Add Workout
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="chart-card">
+
+            <canvas id="workoutChart"></canvas>
+
+        </div>
+
+    </section>
+
+    <!-- WORKOUT LIST -->
+
+    <section class="workout-section">
+
+        <div class="section-title">
+
+            <h1>
+
+                Latest Workouts
+
+            </h1>
+
+            <p>
+
+                Danh sách workout gần đây.
+
+            </p>
+
+        </div>
+
+        <div
+            id="list"
+            class="workout-list"
+        >
+
+        </div>
+
+    </section>
+
+    <!-- BMI -->
+
+    <section class="bmi-section">
+
+        <div class="bmi-box">
+
+            <h1>
+
+                BMI Calculator
+
+            </h1>
+
+            <input
+                type="number"
+                id="height"
+                placeholder="Chiều cao (cm)"
+            >
+
+            <input
+                type="number"
+                id="weight"
+                placeholder="Cân nặng (kg)"
+            >
+
+            <button onclick="calculateBMI()">
+
+                Calculate BMI
+
+            </button>
+
+            <h2 id="bmiResult">
+
+            </h2>
+
+        </div>
+
+    </section>
+
+    <!-- PRICING -->
+
+    <section
+        class="pricing"
+        id="pricing"
+    >
+
+        <div class="section-title">
+
+            <h1>
+
+                Membership Plans
+
+            </h1>
+
+            <p>
+
+                Chọn gói phù hợp với bạn.
+
+            </p>
+
+        </div>
+
+        <div class="pricing-grid">
+
+            <div class="price-card">
+
+                <h2>Basic</h2>
+
+                <h1>$19</h1>
+
+                <p>/month</p>
+
+                <ul>
+
+                    <li>Workout Tracking</li>
+
+                    <li>Basic Analytics</li>
+
+                    <li>Email Support</li>
+
+                </ul>
+
+                <button>
+
+                    Join Now
+
+                </button>
+
+            </div>
+
+            <div class="price-card active">
+
+                <h2>Premium</h2>
+
+                <h1>$49</h1>
+
+                <p>/month</p>
+
+                <ul>
+
+                    <li>All Features</li>
+
+                    <li>Advanced Reports</li>
+
+                    <li>24/7 Support</li>
+
+                </ul>
+
+                <button>
+
+                    Start Premium
+
+                </button>
+
+            </div>
+
+            <div class="price-card">
+
+                <h2>Pro</h2>
+
+                <h1>$99</h1>
+
+                <p>/month</p>
+
+                <ul>
+
+                    <li>Personal Coach</li>
+
+                    <li>Unlimited Access</li>
+
+                    <li>Custom Workout</li>
+
+                </ul>
+
+                <button>
+
+                    Go Pro
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section
+        class="contact"
+        id="contact"
+    >
+
+        <div class="contact-box">
+
+            <h1>
+
+                Contact Us
+
+            </h1>
+
+            <input
+                id="contactName"
+                type="text"
+                placeholder="Họ và tên"
+            >
+
+            <input
+                id="contactEmail"
+                type="email"
+                placeholder="Email"
+            >
+
+            <textarea
+                id="contactMessage"
+                placeholder="Nội dung..."
+            ></textarea>
+
+            <button onclick="sendContact()">
+
+                Send Message
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer-new">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+
+            <div class="footer-brand">
+
+                <i class="fa-solid fa-dumbbell"></i>
+
+                <h1>FITTRACK</h1>
+
+            </div>
+
+            <p>
+
+                Nhật ký tập luyện cá nhân.
+                Ghi lại buổi tập, theo dõi tiến độ
+                và đạt mục tiêu sức khỏe của bạn.
+
+            </p>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h2>Truy Cập Nhanh</h2>
+
+            <a href="#">Trang Chủ</a>
+
+            <a href="history.html">Lịch Sử Tập</a>
+
+            <a href="admin.html">Quản Trị</a>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h2>Liên Hệ</h2>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Hà Nội, Việt Nam
+            </p>
+
+            <p>
+                <i class="fa-regular fa-envelope"></i>
+                fittrack@email.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +84 123 456 789
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 FitTrack.
+        Tất cả quyền được bảo lưu.
+        | FIT4015 - Thiết kế, Lập trình Front-End
+
+    </div>
+
+</footer>
+
+</footer>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

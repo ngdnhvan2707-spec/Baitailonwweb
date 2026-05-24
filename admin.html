@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FitTrack Admin</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                FIT<span>TRACK</span>
+
+            </div>
+
+            <nav class="sidebar-menu">
+
+                <a href="index.html">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    Dashboard
+
+                </a>
+
+                <a href="history.html">
+
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    Lịch sử tập
+
+                </a>
+
+                <a class="active" href="admin.html">
+
+                    <i class="fa-solid fa-user-shield"></i>
+
+                    Quản lý
+
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <!-- MAIN -->
+
+        <main class="admin-main">
+
+            <div class="admin-header">
+
+                <h1>Trang Quản Lý</h1>
+
+                <p>
+                    Theo dõi toàn bộ dữ liệu workout
+                </p>
+
+            </div>
+
+            <!-- STATS -->
+
+            <div class="admin-stats">
+
+                <div class="admin-card">
+
+                    <h2 id="adminTotalWorkout">0</h2>
+
+                    <p>Tổng Buổi Tập</p>
+
+                </div>
+
+                <div class="admin-card">
+
+                    <h2 id="adminCalories">0</h2>
+
+                    <p>Tổng Calories</p>
+
+                </div>
+
+            </div>
+
+            <!-- TABLE -->
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Tên</th>
+
+                            <th>Calories</th>
+
+                            <th>Thời gian</th>
+
+                            <th>Ngày</th>
+
+                            <th>Sửa</th>
+
+                            <th>Xóa</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="adminBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
